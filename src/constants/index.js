@@ -23,6 +23,14 @@ import {
 	jobit,
 	tripguide,
 	threejs,
+	bootstrap,
+	sql,
+	firebase,
+	arduino,
+	raspberry,
+	c,
+	csharp,
+	python,
 } from "../assets";
 
 export const navLinks = [
@@ -53,10 +61,6 @@ const services = [
 		title: "Unity Developer",
 		icon: backend,
 	},
-	{
-		title: "Microcontroller Operator",
-		icon: creator,
-	},
 ];
 
 const technologies = [
@@ -77,16 +81,32 @@ const technologies = [
 		icon: typescript,
 	},
 	{
+		name: "Python",
+		icon: python,
+	},
+	{
+		name: "C++",
+		icon: c,
+	},
+	{
+		name: "Csharp",
+		icon: csharp,
+	},
+	{
 		name: "React JS",
 		icon: reactjs,
 	},
 	{
-		name: "Redux Toolkit",
-		icon: redux,
-	},
-	{
 		name: "Tailwind CSS",
 		icon: tailwind,
+	},
+	{
+		name: "bootstrap",
+		icon: bootstrap,
+	},
+	{
+		name: "Three JS",
+		icon: threejs,
 	},
 	{
 		name: "Node JS",
@@ -95,22 +115,6 @@ const technologies = [
 	{
 		name: "MongoDB",
 		icon: mongodb,
-	},
-	{
-		name: "Three JS",
-		icon: threejs,
-	},
-	{
-		name: "git",
-		icon: git,
-	},
-	{
-		name: "figma",
-		icon: figma,
-	},
-	{
-		name: "docker",
-		icon: docker,
 	},
 ];
 

@@ -20,6 +20,15 @@ import redux from "./tech/redux.png";
 import tailwind from "./tech/tailwind.png";
 import typescript from "./tech/typescript.png";
 import threejs from "./tech/threejs.svg";
+import bootstrap from "./tech/bootstrap.svg";
+import c from "./tech/c.svg";
+import csharp from "./tech/csharp.svg";
+import firebase from "./tech/firebase.svg";
+import jest from "./tech/jest.svg";
+import python from "./tech/python.svg";
+import sql from "./tech/sql.svg";
+import arduino from "./tech/arduino.svg";
+import raspberry from "./tech/raspberry.svg";
 
 import meta from "./company/meta.png";
 import shopify from "./company/shopify.png";
@@ -31,32 +40,41 @@ import jobit from "./jobit.png";
 import tripguide from "./tripguide.png";
 
 export {
-  logo,
-  backend,
-  creator,
-  mobile,
-  web,
-  github,
-  menu,
-  close,
-  css,
-  docker,
-  figma,
-  git,
-  html,
-  javascript,
-  mongodb,
-  nodejs,
-  reactjs,
-  redux,
-  tailwind,
-  typescript,
-  threejs,
-  meta,
-  shopify,
-  starbucks,
-  tesla,
-  carrent,
-  jobit,
-  tripguide,
+	logo,
+	backend,
+	creator,
+	mobile,
+	web,
+	github,
+	menu,
+	close,
+	css,
+	docker,
+	figma,
+	git,
+	html,
+	javascript,
+	mongodb,
+	nodejs,
+	reactjs,
+	redux,
+	tailwind,
+	typescript,
+	threejs,
+	meta,
+	shopify,
+	starbucks,
+	tesla,
+	carrent,
+	jobit,
+	tripguide,
+	bootstrap,
+	arduino,
+	c,
+	csharp,
+	firebase,
+	jest,
+	python,
+	sql,
+	raspberry,
 };
