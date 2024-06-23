@@ -50,11 +50,11 @@ const services = [
 		icon: mobile,
 	},
 	{
-		title: "Backend Developer",
+		title: "Unity Developer",
 		icon: backend,
 	},
 	{
-		title: "Content Creator",
+		title: "Microcontroller Operator",
 		icon: creator,
 	},
 ];
