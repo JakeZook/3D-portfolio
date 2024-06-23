@@ -45,7 +45,7 @@ const Navbar = () => {
 								| Full Stack Web Developer
 							</span>
 						</p>
-						<ul className="flex justify-start gap-5">
+						<ul className="max-sm:hidden flex justify-start gap-5">
 							<li className="mt-2" onClick={() => setToggle(false)}>
 								<SocialIcon
 									target="_blank"
@@ -116,13 +116,13 @@ const Navbar = () => {
 							{navLinks.map((link, index) => (
 								<li
 									key={index}
-									className={`text-white hover:text-[#915eff] text-[18px] font-medium cursor-pointer`}
+									className={`text-white hover:text-[#915eff] text-[26px] font-medium cursor-pointer py-2`}
 									onClick={() => handleLinkClick(link.title)}
 								>
 									<a href={`#${link.id}`}>{link.title}</a>
 								</li>
 							))}
-							<li className="text-white hover:text-[#915eff] text-[18px] font-medium cursor-pointer">
+							<li className="text-white hover:text-[#915eff] text-[26px] py-2 font-medium cursor-pointer">
 								<a href={resume} download onClick={() => setToggle(false)}>
 									Resume
 								</a>
