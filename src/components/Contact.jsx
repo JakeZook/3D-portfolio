@@ -30,6 +30,20 @@ const Contact = () => {
 	const handleSubmit = (e) => {
 		e.preventDefault();
 		setLoading(true);
+
+		emailjs
+			.sendForm("service_li0zebm", "template_s11687i", formRef.current, {
+				publicKey: "naZw2kEjf3gPjITXz",
+			})
+			.then(
+				() => {
+					console.log("SUCCESS!");
+					setLoading(false);
+				},
+				(error) => {
+					console.log("FAILED...", error.text);
+				}
+			);
 	};
 
 	return (
@@ -55,7 +69,7 @@ const Contact = () => {
 							name="name"
 							value={form.name}
 							onChange={handleChange}
-							placeholder="What's your good name?"
+							placeholder="What can I call you?"
 							className="bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium"
 						/>
 					</label>
@@ -66,7 +80,7 @@ const Contact = () => {
 							name="email"
 							value={form.email}
 							onChange={handleChange}
-							placeholder="What's your web address?"
+							placeholder="What's your email address?"
 							className="bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium"
 						/>
 					</label>
@@ -84,7 +98,7 @@ const Contact = () => {
 
 					<button
 						type="submit"
-						className="bg-tertiary py-3 px-8 rounded-xl outline-none w-fit text-white font-bold shadow-md shadow-primary"
+						className="bg-[#3671ba] hover:bg-[#915eff] py-3 px-8 rounded-xl outline-none w-fit text-white font-bold shadow-md shadow-primary"
 					>
 						{loading ? "Sending..." : "Send"}
 					</button>

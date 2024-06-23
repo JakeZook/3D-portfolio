@@ -8,5 +8,3 @@ ReactDOM.createRoot(document.getElementById("root")).render(
 		<App />
 	</React.StrictMode>
 );
-
-//TODO - Change colors, mobile navbar dropdown, change globe, hookup emailjs, hover on contact button, hover on navbar, github api
