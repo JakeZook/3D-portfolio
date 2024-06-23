@@ -33,7 +33,7 @@ const Hero = () => {
 									2000,
 								]}
 								wrapper="span"
-								speed={75}
+								speed={60}
 								repeat={Infinity}
 								deletionSpeed={75}
 							></TypeAnimation>
