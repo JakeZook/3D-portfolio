@@ -32,9 +32,14 @@ const Contact = () => {
 		setLoading(true);
 
 		emailjs
-			.sendForm("service_li0zebm", "template_s11687i", formRef.current, {
-				publicKey: "naZw2kEjf3gPjITXz",
-			})
+			.sendForm(
+				import.meta.env.VITE_SERVICE_ID,
+				import.meta.env.VITE_TEMPLATE_ID,
+				formRef.current,
+				{
+					publicKey: import.meta.env.VITE_PUBLIC_KEY,
+				}
+			)
 			.then(
 				() => {
 					console.log("SUCCESS!");
