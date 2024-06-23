@@ -30,14 +30,12 @@ import sql from "./tech/sql.svg";
 import arduino from "./tech/arduino.svg";
 import raspberry from "./tech/raspberry.svg";
 
-import meta from "./company/meta.png";
-import shopify from "./company/shopify.png";
-import starbucks from "./company/starbucks.png";
-import tesla from "./company/tesla.png";
+import Escapeworks from "./company/Escapeworks.png";
+import DU from "./company/DU.png";
 
-import carrent from "./carrent.png";
-import jobit from "./jobit.png";
-import tripguide from "./tripguide.png";
+import ewd from "./ewd.png";
+import ShrednKens from "./ShrednKens.png";
+import WordyWhirl from "./WordyWhirl.png";
 
 export {
 	logo,
@@ -61,13 +59,11 @@ export {
 	tailwind,
 	typescript,
 	threejs,
-	meta,
-	shopify,
-	starbucks,
-	tesla,
-	carrent,
-	jobit,
-	tripguide,
+	Escapeworks,
+	DU,
+	ewd,
+	ShrednKens,
+	WordyWhirl,
 	bootstrap,
 	arduino,
 	c,

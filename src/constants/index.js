@@ -15,13 +15,11 @@ import {
 	git,
 	figma,
 	docker,
-	meta,
-	starbucks,
-	tesla,
-	shopify,
-	carrent,
-	jobit,
-	tripguide,
+	Escapeworks,
+	DU,
+	ewd,
+	ShrednKens,
+	WordyWhirl,
 	threejs,
 	bootstrap,
 	sql,
@@ -120,55 +118,36 @@ const technologies = [
 
 const experiences = [
 	{
-		title: "React.js Developer",
-		company_name: "Starbucks",
-		icon: starbucks,
+		title: "Full Stack Web Development Certification",
+		company_name: "University of Denver",
+		icon: DU,
 		iconBg: "#383E56",
-		date: "March 2020 - April 2021",
+		date: "August 2023 - November 2023",
 		points: [
-			"Developing and maintaining web applications using React.js and other related technologies.",
-			"Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-			"Implementing responsive design and ensuring cross-browser compatibility.",
-			"Participating in code reviews and providing constructive feedback to other developers.",
+			`A 12-week, fully remote, and highly intensive program that provided
+				technical programming skills for Full Stack Web Development.`,
+			`Focused on multiple languages, frameworks, and libraries currently used in the industry.`,
+			`Developed multiple relevant projects solo and with teams of 4.
+				Gained experience collaborating with other programmers and working
+				with Git efficiently and spent approximately 50 hours/week on the
+				program.`,
 		],
 	},
 	{
-		title: "React Native Developer",
-		company_name: "Tesla",
-		icon: tesla,
-		iconBg: "#E6DEDD",
-		date: "Jan 2021 - Feb 2022",
-		points: [
-			"Developing and maintaining web applications using React.js and other related technologies.",
-			"Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-			"Implementing responsive design and ensuring cross-browser compatibility.",
-			"Participating in code reviews and providing constructive feedback to other developers.",
-		],
-	},
-	{
-		title: "Web Developer",
-		company_name: "Shopify",
-		icon: shopify,
+		title: "General Manager / Software Manager",
+		company_name: "EscapeWorks Denver",
+		icon: Escapeworks,
 		iconBg: "#383E56",
-		date: "Jan 2022 - Jan 2023",
+		date: "June 2021 - June 2024",
 		points: [
-			"Developing and maintaining web applications using React.js and other related technologies.",
-			"Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-			"Implementing responsive design and ensuring cross-browser compatibility.",
-			"Participating in code reviews and providing constructive feedback to other developers.",
-		],
-	},
-	{
-		title: "Full stack Developer",
-		company_name: "Meta",
-		icon: meta,
-		iconBg: "#E6DEDD",
-		date: "Jan 2023 - Present",
-		points: [
-			"Developing and maintaining web applications using React.js and other related technologies.",
-			"Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-			"Implementing responsive design and ensuring cross-browser compatibility.",
-			"Participating in code reviews and providing constructive feedback to other developers.",
+			`EscapeWorks Denver Denver, CO Managed a staff of up to 15 employees.
+				Handled recruitment, development, inventory, expense reporting,
+				marketing, SEO optimization, and day-to-day operations.`,
+			`Responsible for managing large projects such as upgrading or building new customer experiences`,
+			`Maintained a custom, open source, server-side application to operate the customer experience,
+				utilizing Arduino and Raspberry Pi hardware and software to create
+				interactive puzzles, and wiring numerous props to MQTT relay devices to
+				interact with our custom server.`,
 		],
 	},
 ];
@@ -176,42 +155,40 @@ const experiences = [
 const testimonials = [
 	{
 		testimonial:
-			"I thought it was impossible to make a website as beautiful as our product, but Rick proved me wrong.",
-		name: "Sara Lee",
-		designation: "CFO",
-		company: "Acme Co",
-		image: "https://randomuser.me/api/portraits/women/4.jpg",
+			"Jake possesses an innate curiosity for technology and actively seeks solutions to the challenges he encounters. These qualities, such as passion, curiosity, and motivation, are crucial for any developer, and Jake embodies them all.",
+		name: "Tony Fryer",
+		designation: "Mentor",
+		image:
+			"https://media.licdn.com/dms/image/D4D03AQEdGU6_kbDaxQ/profile-displayphoto-shrink_400_400/0/1697126941922?e=2147483647&v=beta&t=QT1D4T27pol6ASRbD18QkN2kliPCeCeTmRw57xj86tw",
 	},
 	{
 		testimonial:
-			"I've never met a web developer who truly cares about their clients' success like Rick does.",
-		name: "Chris Brown",
-		designation: "COO",
-		company: "DEF Corp",
-		image: "https://randomuser.me/api/portraits/men/5.jpg",
+			"Beyond the keyboards and screens, Jake is an awesome friend and the kind of teammate everyone needs. Any company would strike gold by bringing him on board. He’s a standout developer and an even better team player. ",
+		name: "Pete Richards",
+		designation: "Colleague",
+		image: "https://avatars.githubusercontent.com/u/132288738?v=4",
 	},
 	{
 		testimonial:
-			"After Rick optimized our website, our traffic increased by 50%. We can't thank them enough!",
-		name: "Lisa Wang",
-		designation: "CTO",
-		company: "456 Enterprises",
-		image: "https://randomuser.me/api/portraits/women/6.jpg",
+			"What sets Jake apart is not just his ability to tackle complex tasks but also his unwavering dependability and diligence. He has an exceptional work ethic, consistently going the extra mile to ensure that the project's goals are met.",
+		name: "Jordan Adams",
+		designation: "Colleague",
+		image: "https://avatars.githubusercontent.com/u/139721955?v=4",
 	},
 ];
 
 const projects = [
 	{
-		name: "Car Rent",
+		name: "Wordy Whirl",
 		description:
-			"Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+			"A Wordle style word game where players try to guess a new 5 letter word each day. Deployed on the App Store and Google Play Store for free.",
 		tags: [
 			{
-				name: "react",
+				name: "react-native",
 				color: "blue-text-gradient",
 			},
 			{
-				name: "mongodb",
+				name: "Expo",
 				color: "green-text-gradient",
 			},
 			{
@@ -219,50 +196,50 @@ const projects = [
 				color: "pink-text-gradient",
 			},
 		],
-		image: carrent,
-		source_code_link: "https://github.com/",
+		image: WordyWhirl,
+		source_code_link: "https://github.com/JakeZook/WordWhirl",
 	},
 	{
-		name: "Job IT",
+		name: "EscapeWorks Website",
 		description:
-			"Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+			"An escape room booking website that allows customers to book rooms, view availability, and learn about the company. Optimized for great SEO and setup with Google Analytics.",
 		tags: [
 			{
 				name: "react",
 				color: "blue-text-gradient",
 			},
 			{
-				name: "restapi",
+				name: "Framer Motion",
 				color: "green-text-gradient",
 			},
 			{
-				name: "scss",
+				name: "Tailwind",
 				color: "pink-text-gradient",
 			},
 		],
-		image: jobit,
-		source_code_link: "https://github.com/",
+		image: ewd,
+		source_code_link: "https://github.com/JakeZook/EWD-New-Website",
 	},
 	{
-		name: "Trip Guide",
+		name: "ShredNStyle",
 		description:
-			"A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+			"My first project with a large group during my time in boot camp. A full stack winter sports E-Commerce site. Provides apparel, gear, lift passes, resort and weather information.",
 		tags: [
 			{
-				name: "nextjs",
+				name: "Handlebars",
 				color: "blue-text-gradient",
 			},
 			{
-				name: "supabase",
+				name: "MongoDB",
 				color: "green-text-gradient",
 			},
 			{
-				name: "css",
+				name: "Bootstrap",
 				color: "pink-text-gradient",
 			},
 		],
-		image: tripguide,
-		source_code_link: "https://github.com/",
+		image: ShrednKens,
+		source_code_link: "https://github.com/nlad218/ShredNStyle",
 	},
 ];
 
