@@ -1,14 +1,24 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
+import { SocialIcon } from "react-social-icons";
 
 import { styles } from "../style";
 import { navLinks } from "../constants";
-import { menu, close } from "../assets";
+import { menu, resume } from "../assets";
 import favicon from "../assets/favicon/favicon.ico";
 
 const Navbar = () => {
-	const [active, setActive] = useState("");
 	const [toggle, setToggle] = useState(false);
+
+	const handleLinkClick = (title) => {
+		setToggle(false);
+		const element = document.getElementById(
+			title.replace(/\s+/g, "-").toLowerCase()
+		);
+		if (element) {
+			element.scrollIntoView({ behavior: "smooth" });
+		}
+	};
 
 	return (
 		<nav
@@ -23,54 +33,123 @@ const Navbar = () => {
 						window.scrollTo(0, 0);
 					}}
 				>
-					<img src={favicon} alt="logo" className="w-12 h-12 object-contain" />
-					<p className="text-white text-[18px] font-bold cursor-pointer flex">
-						Jake Zook &nbsp;{" "}
-						<span className="sm:block hidden">| Full Stack Web Developer</span>
-					</p>
+					<img
+						src={favicon}
+						alt="logo"
+						className="w-12 h-12 object-contain mr-3"
+					/>
+					<div className="flex flex-col">
+						<p className="text-white text-[18px] font-bold cursor-pointer flex">
+							Jake Zook &nbsp;{" "}
+							<span className="sm:block hidden">
+								| Full Stack Web Developer
+							</span>
+						</p>
+						<ul className="flex justify-start gap-5">
+							<li className="mt-2" onClick={() => setToggle(false)}>
+								<SocialIcon
+									target="_blank"
+									url="https://www.linkedin.com/in/jake-zook-b27992222/"
+									style={{ height: 35, width: 35 }}
+								/>
+							</li>
+							<li className="mt-2" onClick={() => setToggle(false)}>
+								<SocialIcon
+									target="_blank"
+									url="https://github.com/JakeZook"
+									style={{ height: 35, width: 35 }}
+								/>
+							</li>
+							<li className="mt-2" onClick={() => setToggle(false)}>
+								<SocialIcon
+									target="_blank"
+									url="https://www.discord.com/users/673296567452827675"
+									style={{ height: 35, width: 35 }}
+								/>
+							</li>
+						</ul>
+					</div>
 				</Link>
 				<ul className="list-none hidden sm:flex flex-row gap-10">
 					{navLinks.map((link, index) => (
 						<li
 							key={index}
-							className={`${
-								active === link.title ? "text-white" : "text-secondary"
-							} hover:text-white text-[18px] font-medium cursor-pointer`}
-							onClick={() => setActive(link.title)}
+							className={`text-[#3671ba] hover:text-[#915eff] text-[18px] font-medium cursor-pointer`}
+							onClick={() => handleLinkClick(link.title)}
 						>
-							<a href={`#${link.id}`}>{link.title}</a>
+							<a
+								href={`#${link.id}`}
+								onClick={() => handleLinkClick(link.title)}
+							>
+								{link.title}
+							</a>
 						</li>
 					))}
+					<li className="text-[#3671ba] hover:text-[#915eff] text-[18px] font-medium cursor-pointer">
+						<a href={resume} download>
+							Resume
+						</a>
+					</li>
 				</ul>
 
-				<div className="sm:hidden flex flex-1 justify-end items-center">
-					<img
-						src={toggle ? close : menu}
-						alt="menu"
-						className="w-[28px] h-[28px] object-contain cursor-pointer"
-						onClick={() => setToggle(!toggle)}
+				<div className="sm:hidden drawer drawer-end w-10">
+					<input
+						id="my-drawer"
+						type="checkbox"
+						className="drawer-toggle"
+						checked={toggle}
+						onChange={() => setToggle(!toggle)}
 					/>
-
-					<div
-						className={`${
-							!toggle ? "hidden" : "flex"
-						} p-6 black-gradient absolute top-20 right-0 mx-4 my-2 min-w-[140px] z-10 rounded-xl`}
-					>
-						<ul className="list-none flex justify-end items-start flex-col gap-4">
+					<div className="drawer-content">
+						<label htmlFor="my-drawer">
+							<img src={menu} alt="menu" />
+						</label>
+					</div>
+					<div className={`drawer-side ${toggle ? "open" : ""}`}>
+						<label
+							htmlFor="my-drawer"
+							aria-label="close sidebar"
+							className="drawer-overlay"
+							onClick={() => setToggle(false)}
+						></label>
+						<ul className="menu black-gradient text-base-content min-h-full w-50 p-4">
 							{navLinks.map((link, index) => (
 								<li
 									key={index}
-									className={`${
-										active === link.title ? "text-white" : "text-secondary"
-									} font-poppins font-medium cursor-pointer text-[16px]`}
-									onClick={() => {
-										setToggle(false);
-										setActive(link.title);
-									}}
+									className={`text-white hover:text-[#915eff] text-[18px] font-medium cursor-pointer`}
+									onClick={() => handleLinkClick(link.title)}
 								>
 									<a href={`#${link.id}`}>{link.title}</a>
 								</li>
 							))}
+							<li className="text-white hover:text-[#915eff] text-[18px] font-medium cursor-pointer">
+								<a href={resume} download onClick={() => setToggle(false)}>
+									Resume
+								</a>
+							</li>
+							<ul className="flex justify-center gap-5">
+								<li className="mt-5" onClick={() => setToggle(false)}>
+									<SocialIcon
+										target="_blank"
+										url="https://www.linkedin.com/in/jake-zook-b27992222/"
+										style={{ height: 35, width: 35 }}
+									/>
+								</li>
+								<li className="mt-5" onClick={() => setToggle(false)}>
+									<SocialIcon
+										target="_blank"
+										url="https://github.com/JakeZook"
+										style={{ height: 35, width: 35 }}
+									/>
+								</li>
+								<li className="mt-5" onClick={() => setToggle(false)}>
+									<SocialIcon
+										target="_blank"
+										url="https://www.discord.com/users/673296567452827675"
+										style={{ height: 35, width: 35 }}
+									/>
+								</li>
+							</ul>
 						</ul>
 					</div>
 				</div>

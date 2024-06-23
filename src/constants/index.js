@@ -121,7 +121,7 @@ const experiences = [
 		title: "Full Stack Web Development Certification",
 		company_name: "University of Denver",
 		icon: DU,
-		iconBg: "#383E56",
+		iconBg: "white",
 		date: "August 2023 - November 2023",
 		points: [
 			`A 12-week, fully remote, and highly intensive program that provided
@@ -137,7 +137,7 @@ const experiences = [
 		title: "General Manager / Software Manager",
 		company_name: "EscapeWorks Denver",
 		icon: Escapeworks,
-		iconBg: "#383E56",
+		iconBg: "black",
 		date: "June 2021 - June 2024",
 		points: [
 			`EscapeWorks Denver Denver, CO Managed a staff of up to 15 employees.

@@ -37,6 +37,8 @@ import ewd from "./ewd.png";
 import ShrednKens from "./ShrednKens.png";
 import WordyWhirl from "./WordyWhirl.png";
 
+import resume from "./Jake Zook Tech Resume.pdf";
+
 export {
 	logo,
 	backend,
@@ -73,4 +75,5 @@ export {
 	python,
 	sql,
 	raspberry,
+	resume,
 };

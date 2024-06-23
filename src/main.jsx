@@ -9,4 +9,4 @@ ReactDOM.createRoot(document.getElementById("root")).render(
 	</React.StrictMode>
 );
 
-//TODO - Change colors, mobile navbar dropdown, change globe, hookup emailjs, hover on contact button, hover on navbar, github api
+//TODO - mobile navbar dropdown, hookup emailjs, hover on contact button,
