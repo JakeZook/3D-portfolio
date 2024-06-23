@@ -20,7 +20,7 @@ const Earth = () => {
 	useFrame(({ clock }) => {
 		if (modelRef.current) {
 			const elapsedTime = clock.getElapsedTime();
-			// modelRef.current.rotation.y = elapsedTime * 0.5; // Rotate around Y axis
+			modelRef.current.rotation.x = Math.cos(elapsedTime) * 0.2;
 			modelRef.current.position.y = Math.sin(elapsedTime) * 0.5; // Up and down motion
 		}
 	});
@@ -45,8 +45,8 @@ const EarthCanvas = () => {
 					enableZoom={false}
 					enableRotate={false}
 				/>
-				<ambientLight intensity={0.5} />
-				<directionalLight position={[5, 5, 5]} intensity={1} />
+				<ambientLight intensity={3} />
+				<directionalLight position={[5, 5, 5]} intensity={3} />
 				<Earth />
 				<Preload all />
 			</Suspense>

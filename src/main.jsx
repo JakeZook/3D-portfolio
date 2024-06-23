@@ -8,5 +8,3 @@ ReactDOM.createRoot(document.getElementById("root")).render(
 		<App />
 	</React.StrictMode>
 );
-
-//TODO - mobile navbar dropdown, hookup emailjs, hover on contact button,

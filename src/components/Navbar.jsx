@@ -36,7 +36,7 @@ const Navbar = () => {
 					<img
 						src={favicon}
 						alt="logo"
-						className="w-12 h-12 object-contain mr-3"
+						className="w-16 h-16 object-contain mr-3"
 					/>
 					<div className="flex flex-col">
 						<p className="text-white text-[18px] font-bold cursor-pointer flex">
