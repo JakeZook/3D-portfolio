@@ -36,6 +36,7 @@ import DU from "./company/DU.png";
 import ewd from "./ewd.png";
 import ShrednKens from "./ShrednKens.png";
 import WordyWhirl from "./WordyWhirl.png";
+import Sorter from "./Sorter.png";
 
 import resume from "./Jake Zook Tech Resume.pdf";
 
@@ -76,4 +77,5 @@ export {
 	sql,
 	raspberry,
 	resume,
+	Sorter,
 };

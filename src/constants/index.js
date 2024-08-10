@@ -29,6 +29,7 @@ import {
 	c,
 	csharp,
 	python,
+	Sorter,
 } from "../assets";
 
 export const navLinks = [
@@ -240,6 +241,27 @@ const projects = [
 		],
 		image: ShrednKens,
 		source_code_link: "https://github.com/nlad218/ShredNStyle",
+	},
+	{
+		name: "Algorithm Visualizer",
+		description:
+			"A visualization tool designed to help better understand common algorithms. Featuring a variety of sorting and pathfinding algorithms to watch in real time.",
+		tags: [
+			{
+				name: "react",
+				color: "blue-text-gradient",
+			},
+			{
+				name: "algorthims",
+				color: "green-text-gradient",
+			},
+			{
+				name: "tailwind",
+				color: "pink-text-gradient",
+			},
+		],
+		image: Sorter,
+		source_code_link: "https://github.com/JakeZook/Sorting-Visualizer",
 	},
 ];
 
