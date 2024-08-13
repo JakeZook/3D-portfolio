@@ -37,6 +37,7 @@ import ewd from "./ewd.png";
 import ShrednKens from "./ShrednKens.png";
 import WordyWhirl from "./WordyWhirl.png";
 import Sorter from "./Sorter.png";
+import demo from "./demo.png";
 
 import resume from "./Jake Zook Tech Resume.pdf";
 
@@ -78,4 +79,5 @@ export {
 	raspberry,
 	resume,
 	Sorter,
+	demo,
 };

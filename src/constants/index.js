@@ -199,6 +199,8 @@ const projects = [
 		],
 		image: WordyWhirl,
 		source_code_link: "https://github.com/JakeZook/WordWhirl",
+		live_link:
+			"https://apps.apple.com/us/app/wordy-whirl/id6503647104?platform=ipad",
 	},
 	{
 		name: "EscapeWorks Website",
@@ -220,6 +222,7 @@ const projects = [
 		],
 		image: ewd,
 		source_code_link: "https://github.com/JakeZook/EWD-New-Website",
+		live_link: "https://ewdnew.netlify.app/",
 	},
 	{
 		name: "ShredNStyle",
@@ -241,6 +244,7 @@ const projects = [
 		],
 		image: ShrednKens,
 		source_code_link: "https://github.com/nlad218/ShredNStyle",
+		live_link: "https://shrednstyle-a1ce73eecb82.herokuapp.com/",
 	},
 	{
 		name: "Algorithm Visualizer",
@@ -262,6 +266,7 @@ const projects = [
 		],
 		image: Sorter,
 		source_code_link: "https://github.com/JakeZook/Sorting-Visualizer",
+		live_link: "https://visualizerjz.netlify.app/",
 	},
 ];
 
